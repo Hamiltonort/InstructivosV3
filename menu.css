@@ -1,0 +1,316 @@
+main {
+    min-height: calc(100vh - 70px);
+    padding: 45px 60px;
+}
+
+
+/* ===============================
+   HEADER
+================================ */
+
+.main-header {
+    min-height: 70px;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #0f172a;
+
+    color: white;
+}
+
+
+.app-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#userName {
+    color: #cbd5e1;
+}
+
+
+.logout-button {
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.logout-button:hover {
+    background: #b91c1c;
+}
+
+
+/* ===============================
+   HERO
+================================ */
+
+.hero {
+    max-width: 1200px;
+
+    margin: 0 auto 40px auto;
+}
+
+
+.hero h1 {
+    margin: 0 0 10px 0;
+
+    font-size: 36px;
+
+    color: #0f172a;
+}
+
+
+.hero p {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #64748b;
+}
+
+
+/* ===============================
+   MÁQUINAS
+================================ */
+
+.machines {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* ===============================
+   TARJETAS
+================================ */
+
+.machine-card {
+    position: relative;
+
+    min-height: 350px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(15, 23, 42, 0.08);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.machine-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+}
+
+
+.machine-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 18px 40px
+        rgba(37, 99, 235, 0.15);
+}
+
+
+/* ===============================
+   ICONO
+================================ */
+
+.machine-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #eff6ff;
+
+    font-size: 30px;
+}
+
+
+/* ===============================
+   TEXTO
+================================ */
+
+.machine-card h2 {
+    margin: 0 0 12px 0;
+
+    font-size: 26px;
+
+    color: #0f172a;
+}
+
+
+.machine-card p {
+    margin: 0 0 30px 0;
+
+    flex: 1;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #64748b;
+}
+
+
+/* ===============================
+   BOTONES
+================================ */
+
+.machine-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.machine-button:hover {
+    background: #1d4ed8;
+}
+
+
+.machine-button:active {
+    transform: scale(0.98);
+}
+
+
+/* ===============================
+   COLORES
+================================ */
+
+.machine-card[data-machine="trefiladora"]::before {
+    background: #2563eb;
+}
+
+
+.machine-card[data-machine="cableadora"]::before {
+    background: #16a34a;
+}
+
+
+.machine-card[data-machine="extrusora"]::before {
+    background: #ea580c;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 950px) {
+
+    .machines {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    main {
+        padding: 30px 20px;
+    }
+
+
+    .main-header {
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+
+    .machines {
+        grid-template-columns: 1fr;
+    }
+
+}

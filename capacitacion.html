@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Capacitación</title>
+
+    css/global.css
+
+    css/capacitacion.css
+
+</head>
+
+
+<body>
+
+    <header class="main-header">
+
+        <div class="app-name">
+            Capacitación de Operarios
+        </div>
+
+        <button
+            id="logout"
+            class="logout-button"
+            type="button"
+        >
+            Cerrar sesión
+        </button>
+
+    </header>
+
+
+    <main class="training-container">
+
+        <!-- INFORMACIÓN -->
+
+        <section class="training-header">
+
+            <div class="training-info">
+
+                <h1 id="machineTitle">
+                    Capacitación
+                </h1>
+
+                <p>
+                    Sigue atentamente el instructivo
+                    y completa las actividades.
+                </p>
+
+            </div>
+
+
+            <button
+                id="backButton"
+                class="back-button"
+                type="button"
+            >
+                ← Volver al menú
+            </button>
+
+        </section>
+
+
+        <!-- REPRODUCTOR -->
+
+        <section class="training-content">
+
+            <div class="video-wrapper">
+
+                <video
+                    id="trainingVideo"
+                    controls
+                    preload="metadata"
+                >
+                    Tu navegador no puede reproducir
+                    este video.
+                </video>
+
+
+                <!-- Elementos encima del video -->
+
+                <div
+                    id="interactiveLayer"
+                    class="interactive-layer"
+                >
+                </div>
+
+
+                <!-- POPUP -->
+
+                <div
+                    id="interactionOverlay"
+                    class="overlay hidden"
+                >
+
+                    <div
+                        id="interactionCard"
+                        class="interaction-card"
+                    >
+
+                        <h2 id="interactionTitle">
+                            Información
+                        </h2>
+
+                        <p id="interactionContent">
+                        </p>
+
+                        <div
+                            id="questionOptions"
+                            class="question-options"
+                        >
+                        </div>
+
+                        <button
+                            id="continueButton"
+                            class="continue-button"
+                            type="button"
+                        >
+                            Continuar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROGRESO -->
+
+            <div class="progress-section">
+
+                <div class="progress-info">
+
+                    <span>
+                        Progreso del video
+                    </span>
+
+                    <span id="progressText">
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        id="progressValue"
+                        class="progress-value"
+                    >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    js/capacitacion.jsscript>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Menú principal</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <div class="app-name">
+            Capacitación de Operarios
+        </div>
+
+        <div class="header-actions">
+
+            <span id="userName">
+                Operario
+            </span>
+
+            <button id="logout" class="logout-button">
+                Cerrar sesión
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h1>
+                Selecciona una estación
+            </h1>
+
+            <p>
+                Elige la máquina sobre la que deseas realizar
+                la capacitación.
+            </p>
+
+        </section>
+
+
+        <section class="machines">
+
+            <!-- TREFILADORA -->
+
+            <article
+                class="machine-card"
+                data-machine="trefiladora"
+            >
+
+                <div class="machine-icon">
+                    ⚙
+                </div>
+
+                <h2>
+                    Trefiladora
+                </h2>
+
+                <p>
+                    Procedimientos de operación,
+                    funcionamiento y seguridad.
+                </p>
+
+                <button
+                    class="machine-button"
+                    type="button"
+                >
+                    Ver capacitación
+                </button>
+
+            </article>
+
+
+            <!-- CABLEADORA -->
+
+            <article
+                class="machine-card"
+                data-machine="cableadora"
+            >
+
+                <div class="machine-icon">
+                    🔧
+                </div>
+
+                <h2>
+                    Cableadora
+                </h2>
+
+                <p>
+                    Procedimientos de operación,
+                    funcionamiento y seguridad.
+                </p>
+
+                <button
+                    class="machine-button"
+                    type="button"
+                >
+                    Ver capacitación
+                </button>
+
+            </article>
+
+
+            <!-- EXTRUSORA -->
+
+            <article
+                class="machine-card"
+                data-machine="extrusora"
+            >
+
+                <div class="machine-icon">
+                    🏭
+                </div>
+
+                <h2>
+                    Extrusora
+                </h2>
+
+                <p>
+                    Procedimientos de operación,
+                    funcionamiento y seguridad.
+                </p>
+
+                <button
+                    class="machine-button"
+                    type="button"
+                >
+                    Ver capacitación
+                </button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>
